@@ -1,0 +1,22 @@
+{
+  "name": "makersbnb",
+  "version": "1.0.0",
+  "description": "Find a space to stay for the night & list available spaces. Friendly platform for reliable, unique accomodation.",
+  "main": "public/bnb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dewinterjack/makersBNB.git"
+  },
+  "author": "Jack Dewinter <jackdewinter1@gmail.com> (http://github.com/dewinterjack)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dewinterjack/makersBNB/issues"
+  },
+  "homepage": "https://github.com/dewinterjack/makersBNB#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
