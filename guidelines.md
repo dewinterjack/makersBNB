@@ -13,11 +13,13 @@ Slack + Trello
 
 ## Roles
 
+Needs work, temporary template:
+
 
 | Member | Area                    | Tool   |
 |--------|-------------------------|--------|
 | Daniel | Management/Organisation | Trello |
-| Jack   | Code Standard           | GitHub |
+| Jack   |Code Standard, repo manager| GitHub |
 | Jordan |                         |        |
 | Irbe   |                         |        |
 | Matt   |                         |        |
