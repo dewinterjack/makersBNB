@@ -1,5 +1,7 @@
 # Guidelines
 
+**These are temporary, we need to discuss them before they are confirmed.**
+
 Daily meetings: 9:30am
 Reflection, feedback.
 
@@ -9,3 +11,13 @@ We need a way to be productive on GitHub without working on the same thing and m
 
 Slack + Trello
 
+## Roles
+
+
+| Member | Area                    | Tool   |
+|--------|-------------------------|--------|
+| Daniel | Management/Organisation | Trello |
+| Jack   | Code Standard           | GitHub |
+| Jordan |                         |        |
+| Irbe   |                         |        |
+| Matt   |                         |        |
