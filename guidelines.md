@@ -25,11 +25,15 @@ Trello list for files being worked on. Do not work on a file that has been chose
 
 Needs work, temporary template:
 
+*Members have control of their own area, they have final say on matters regarding those areas.*
+
 
 | Member | Area                    | Tool   |
 |--------|-------------------------|--------|
 | Daniel | Management/Organisation | Trello |
-| Jack   |Code Standard, repo manager| GitHub |
+| Jack   |Code Standard, repo manager.| GitHub |
 | Jordan |                         |        |
 | Irbe   |                         |        |
 | Matt   |                         |        |
+
+
