@@ -21,6 +21,7 @@
     "mongodb": "^3.0.7"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "mongoose": "^5.0.15"
   }
 }
