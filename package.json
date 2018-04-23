@@ -4,7 +4,7 @@
   "description": "Find a space to stay for the night & list available spaces. Friendly platform for reliable, unique accomodation.",
   "main": "public/bnb.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp createdb --gulpfile config/gulpfile.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/dewinterjack/makersBNB#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mongodb": "^3.0.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
