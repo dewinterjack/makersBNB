@@ -1,10 +1,12 @@
-{
+const seleniumServer = require("selenium-server");
+
+const config = {
   "src_folders" : ["tests"],
   "output_folder" : "reports",
 
   "selenium": {
     "start_process": true,
-    "server_path": "./bin/selenium-server-standalone-3.9.1.jar",
+    "server_path": seleniumServer.path,
     "log_path": false,
     "host": "127.0.0.1",
     "port": 4444
@@ -27,3 +29,4 @@
     }
   }
 }
+module.exports = config;
