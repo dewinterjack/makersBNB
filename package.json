@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/dewinterjack/makersBNB#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "nightwatch": "^0.9.20"
