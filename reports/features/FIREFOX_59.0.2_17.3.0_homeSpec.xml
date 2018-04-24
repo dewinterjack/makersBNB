@@ -5,9 +5,9 @@
 
   <testsuite name="features.homeSpec"
     errors="0" failures="0" hostname="" id="" package="features" skipped="0"
-    tests="1" time="2.661" timestamp="Mon, 23 Apr 2018 16:33:46 GMT">
+    tests="1" time="3.642" timestamp="Tue, 24 Apr 2018 09:23:08 GMT">
   
-    <testcase name="Demo test Google" classname="features.homeSpec" time="2.661" assertions="1">
+    <testcase name="test home page" classname="features.homeSpec" time="3.642" assertions="1">
 
     
     </testcase>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="features.homeSpec"
+    errors="1" failures="0" hostname="" id="" package="features" skipped="0"
+    tests="1" time="0.005000" timestamp="Tue, 24 Apr 2018 09:45:55 GMT">
+  
+    <testcase name="test home page" classname="features.homeSpec" time="0.005000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Features / Home Spec / test home page]:
+
+  TypeError: Cannot read property &#39;end&#39; of undefined
+    at Object.test home page (/Users/jordanbrooks/Documents/makers/week-challenge/makersBNB/tests/features/homeSpec.js:6:15)
+    at Module.call (/Users/jordanbrooks/Documents/makers/week-challenge/makersBNB/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /Users/jordanbrooks/Documents/makers/week-challenge/makersBNB/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/jordanbrooks/Documents/makers/week-challenge/makersBNB/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/jordanbrooks/Documents/makers/week-challenge/makersBNB/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/jordanbrooks/Documents/makers/week-challenge/makersBNB/node_modules/q/q.js:796:13)
+    at /Users/jordanbrooks/Documents/makers/week-challenge/makersBNB/node_modules/q/q.js:556:49
+    at runSingle (/Users/jordanbrooks/Documents/makers/week-challenge/makersBNB/node_modules/q/q.js:137:13)
+    at flush (/Users/jordanbrooks/Documents/makers/week-challenge/makersBNB/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:176:11)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
