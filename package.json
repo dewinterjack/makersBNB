@@ -4,8 +4,8 @@
   "description": "Find a space to stay for the night & list available spaces. Friendly platform for reliable, unique accomodation.",
   "main": "public/bnb.js",
   "scripts": {
-    "test" : "nightwatch tests/unit",
-    "feature": "nightwatch tests/features"
+    "test": "nightwatch tests/unit",
+    "feature": "nightwatch tests/features",
     "db": "gulp createTestDB --gulpfile config/gulpfile.js"
   },
   "repository": {
