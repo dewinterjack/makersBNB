@@ -1,11 +1,11 @@
-var express = require('express');
-var path = require('path');
+let express = require('express');
+let path = require('path');
 
-var users = require('./routes/users');
-var spaces = require('./routes/spaces');
-var index = require('./routes/index');
+let users = require('./routes/users');
+let spaces = require('./routes/spaces');
+let index = require('./routes/index');
 
-var app = express();
+let app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
