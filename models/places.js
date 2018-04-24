@@ -11,4 +11,4 @@ var PlacesSchema = new Schema(
 );
 
 var Place = mongoose.model('Place', PlacesSchema);
-exports.Place = Place;
+module.exports = Place;
