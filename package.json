@@ -4,7 +4,8 @@
   "description": "Find a space to stay for the night & list available spaces. Friendly platform for reliable, unique accomodation.",
   "main": "public/bnb.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test" : "nightwatch tests/unit",
+    "feature": "nightwatch tests/features"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
-    "nightwatch": "^0.9.20"
+    "nightwatch": "^0.9.20",
+    "selenium-server-standalone": "^2.53.1"
   }
 }
