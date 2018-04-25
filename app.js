@@ -58,6 +58,8 @@ app.get('/logout', function(req, res) {
 	res.redirect('/');
 });
 
+app.post('/delete', userController.deleteUserGet);
+
 // route middleware to make sure a user is logged in
 function isLoggedIn(req, res, next) {
 

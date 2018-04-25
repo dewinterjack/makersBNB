@@ -4,7 +4,11 @@ html
     body
         body
             h1= title
+            span Email:
+            span= user.email
             p You are logged in!
             p View details
             p Edit
-            p Delete account
+            form(id='delete' action='/delete' method='post')
+                input(type='checkbox', id='delete_check')
+                input(type='submit', value='delete')

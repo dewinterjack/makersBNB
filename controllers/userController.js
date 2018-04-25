@@ -9,3 +9,10 @@ exports.showUserProfile = function(req, res){
 	res.render('profile', {user: req.user});
 };
 
+exports.deleteUserGet = function(req, res){
+	console.log(req.user);
+	User.findOne({email: req.user.email}).remove().exec();
+	req.logout();
+	res.redirect('/');
+};
+
