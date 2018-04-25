@@ -7,7 +7,7 @@ var UserSchema = new Schema(
 	{
 		email: String,
 		password: String,
-		places: {type: Array, "default" : []}
+		spaces: {type: Array, "default" : []}
 	}
 );
 
