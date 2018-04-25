@@ -7,7 +7,7 @@ var db = mongoose.connection;
 module.exports = {
   beforeEach: function(browser, done) {
     delete db.models['Place'];
-    place.create( { place_name: 'makers', address: '50-53 commerical street', price_per_night: '1,000,000' } );
+    place.create( { place_name: 'makers', address: '50-54 commerical street', price_per_night: '1,000,000' } );
     setTimeout(function() {
       // finished async duties
       done();
