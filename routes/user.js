@@ -13,7 +13,8 @@ var userController = require('../controllers/userController');
 router.get('/profile', isLoggedIn, userController.showUserProfile);
 
 router.get('/signup', userController.createUserGet); // form for user signup
-router.post('/signup', validateUser, userController.createUserPost); // submitting information to server etc.
+router.post('/signup', userController.createUserPost);
+ // submitting information to server etc.
 
 function isLoggedIn(req, res, next){
 	// user is logged in - will use either passport or sessions

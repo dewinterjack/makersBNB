@@ -1,21 +1,25 @@
 let express = require('express');
 let path = require('path');
 let mongoose = require('mongoose');
+var bodyParser = require('body-parser');
+
 mongoose.set('debug', true);
 mongoose.connect('mongodb://localhost:27017/makersbnb_test');
 var Place = require('./models/places');
 //let spaces = require('./routes/spaces');
-let user = require('./routes/user');
+
 let app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use('/spaces', spaces);
+var userController = require('./controllers/userController');
 
-app.use('/user', user);
+app.get('/signup', userController.createUserGet);
+app.post('/signup', userController.createUserPost);
 
 app.get('/', function(req, res) {
  var query = Place.find({  });
