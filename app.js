@@ -40,7 +40,7 @@ app.post('/signup', passport.authenticate('local-signup', {
 	failureFlash : true
 }));
 
-app.get('/profile', userController.showUserProfile);
+app.get('/profile', isLoggedIn, userController.showUserProfile);
 
 app.get('/login', function(req, res){
 	console.log('Time to login!');
@@ -52,6 +52,23 @@ app.post('/login', passport.authenticate('local-login', {
 	failureRedirect : '/login', // redirect back to the signup page if there is an error
 	failureFlash : true // allow flash messages
 }));
+
+app.get('/logout', function(req, res) {
+	req.logout();
+	res.redirect('/');
+});
+
+// route middleware to make sure a user is logged in
+function isLoggedIn(req, res, next) {
+
+	// if user is authenticated in the session, carry on
+	if (req.isAuthenticated())
+		return next();
+
+	// if they aren't redirect them to the home page
+	res.redirect('/');
+}
+
 
 
 app.listen(9000, () => console.log('Example app listening on port 9000!'));

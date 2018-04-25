@@ -5,7 +5,7 @@ exports.createUserGet = function(req, res) {
 };
 
 exports.showUserProfile = function(req, res){
-	
-	res.send('My profile!');
+	// option to see/add places
+	res.render('profile', {user: req.user});
 };
 
