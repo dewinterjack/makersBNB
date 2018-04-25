@@ -20,8 +20,9 @@
   "homepage": "https://github.com/dewinterjack/makersBNB#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "pug": "^2.0.3",
-    "mongoose": "^5.0.16"
+    "mongoose": "^5.0.16",
+    "passport": "^0.4.0",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

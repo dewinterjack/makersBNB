@@ -5,14 +5,17 @@ mongoose.set('debug', true);
 mongoose.connect('mongodb://localhost:27017/makersbnb_test');
 var Place = require('./models/places');
 //let spaces = require('./routes/spaces');
-
+let user = require('./routes/user');
 let app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, 'public')));
+
 //app.use('/spaces', spaces);
+
+app.use('/user', user);
 
 app.get('/', function(req, res) {
  var query = Place.find({  });
