@@ -46,7 +46,7 @@ app.post('/confirm_add', function(req, res) {
   var date_from = req.body.from;
   var date_until = req.body.to;
 
-  console.log(spaceName + " " + spaceAddress + " " + spacePrice + " " + describe + "from " + date_from + "to " + date_until);
+  console.log(spaceName + " " + spaceAddress + " " + spacePrice + " " + describe + "from " + date_from + " to " + date_until);
   res.redirect('/addspace');
 });
 
