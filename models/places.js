@@ -1,14 +1,15 @@
 var mongoose = require('mongoose');
 
-var Schema = mongoose.Schema;
+var Schema = mongoose.Schema,
+  ObjectId = Schema.ObjectId;
 
-var PlacesSchema = new Schema(
+var PlaceSchema = new Schema(
   {
     place_name: String,
     address: String,
-    price_per_night: String
+    price_per_night: String,
+    user_id: ObjectId
   }
 );
 
-var Place = mongoose.model('Place', PlacesSchema);
-module.exports = Place;
+module.exports = mongoose.model('Place', PlaceSchema);
