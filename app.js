@@ -44,7 +44,7 @@ app.get('/profile', userController.showUserProfile);
 
 app.get('/login', function(req, res){
 	console.log('Time to login!');
-	res.render('login');
+	res.render('login', {title: 'Login'});
 });
 
 app.post('/login', passport.authenticate('local-login', {
