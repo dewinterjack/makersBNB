@@ -12,7 +12,6 @@ exports.showUserProfile = function(req, res){
 exports.deleteUserGet = function(req, res){
 	console.log(req.user);
 	User.findOne({email: req.user.email}).remove().exec();
-	req.logout();
-	res.redirect('/');
+	res.redirect('/logout');
 };
 

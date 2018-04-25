@@ -28,7 +28,7 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 
 app.get('/', function(req, res) {
 	console.log('Hello World!');
-	res.send('hello world');
+	res.render('index');
 });
 
 // call controller, giving it the app and passport
