@@ -6,7 +6,7 @@ exports.createUserGet = function(req, res) {
 
 exports.showUserProfile = function(req, res){
 	// option to see/add places
-	res.render('profile', {user: req.user});
+	res.render('profile', {user: req.user, title: 'Profile'});
 };
 
 exports.deleteUserGet = function(req, res){
