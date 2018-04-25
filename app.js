@@ -43,8 +43,10 @@ app.post('/confirm_add', function(req, res) {
   var spaceAddress = req.body.spaceaddress;
   var spacePrice = req.body.spaceprice;
   var describe = req.body.spacedescription;
+  var date_from = req.body.from;
+  var date_until = req.body.to;
 
-  console.log(spaceName + " " + spaceAddress + " " + spacePrice + " " + describe);
+  console.log(spaceName + " " + spaceAddress + " " + spacePrice + " " + describe + "from " + date_from + "to " + date_until);
   res.redirect('/addspace');
 });
 
