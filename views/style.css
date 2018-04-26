@@ -23,3 +23,11 @@ input{
     left: 50px;
     top:20px;
 }
+
+#submit_space{
+    width: 5em;  height: 2em;
+}
+
+p{
+    font-weight: bold;
+}

@@ -1,16 +1,21 @@
 
 doctype html
-h1 Sample Form
-form(action = '/spaces/new' method = "POST")
-  p NAME:
-  input(type = "text" name = "spacename" placeholder = "NAME")
-  p ADDRESS:
-  input(type = "text" name = "spaceaddress" placeholder = "ADDRESS")
-  p PRICE:
-  input(type = "text" name = "spaceprice" placeholder = "PRICE")
-  p DESCRIPTION:
-  input(type = "text" name = "spacedescription" placeholder = "DESCRIPTION")
-  p SUBMIT:
-  input(type="submit") 
-  include datepicker.html
+body
+  style
+    include style.css
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet')
+  h1 Submit your space!
+  form(action = '/spaces/new' method = "POST")
+    p NAME:
+    input(type = "text" name = "spacename" placeholder = "NAME")
+    p ADDRESS:
+    input(type = "text" name = "spaceaddress" placeholder = "ADDRESS")
+    p PRICE:
+    input(type = "text" name = "spaceprice" placeholder = "PRICE")
+    p DESCRIPTION:
+    input(type = "text" name = "spacedescription" placeholder = "DESCRIPTION")
+    p SUBMIT:
+    input(type="submit" id="submit_space") 
+    include datepicker.html
+    img(src="malogo.png")
 
