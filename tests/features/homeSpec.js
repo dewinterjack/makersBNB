@@ -1,28 +1,33 @@
+
 var mongoose = require('mongoose');
 var url = "mongodb://localhost:27017/makersbnb_test";
-var place = require('../../models/places');
+var space = require('../../models/spaces');
 mongoose.connect(url);
 var db = mongoose.connection;
 
 module.exports = {
-  beforeEach: function(browser, done) {
-    delete db.models['Place'];
-    place.create( { place_name: 'makers', address: '50-54 commerical street', price_per_night: '1,000,000' } );
-    setTimeout(function() {
+  beforeEach: function (browser, done) {
+    space.remove({}, function (err) {
+      console.log(err);
+    });
+
+    space.create({ spacename: 'makers', spaceaddress: '50-53 commercial street', spaceprice: '1,000,000', from: '04/07/18', to: '05/08/18', spacedescription: 'great place' });
+    setTimeout(function () {
       // finished async duties
       done();
     }, 100);
   },
 
-  'test viewing spaces' : function (browser) {
+  'test viewing spaces': function (browser) {
     browser
       .url('http://localhost:9000/spaces')
-      .assert.containsText('makers')
-      .assert.containsText('50-53 commerical street')
-      .assert.containsText('1,000,000');
-   },
+      .assert.containsText('body', 'makers')
+      .assert.containsText('body', '50-53 commercial street')
+      .assert.containsText('body', '1,000,000')
+      .end();
+  },
 
-   'test viewing an added space' : function (browser) {
+  'test viewing an added space': function (browser) {
     browser
       .url('http://localhost:9000/spaces')
       .click('button[name=addspace')
@@ -32,13 +37,13 @@ module.exports = {
       .setValue('input[name=spaceprice]', '2,000,000')
       .click('button[name=submitspace')
       .pause(1000)
-      .assert.containsText('buckingham palace')
-      .assert.containsText('westminster, london, sw1 1aa')
-      .assert.containsText('2,000,000');
-   },
+      .assert.containsText('body', 'buckingham palace')
+      .assert.containsText('body', 'westminster, london, sw1 1aa')
+      .assert.containsText('body', '2,000,000');
+  },
 
-   'test adding a description to a space' : function(browser) {
-     browser
-     .url()
-   }
+  'test adding a description to a space': function (browser) {
+    browser
+      .url();
+  }
 };
