@@ -6,12 +6,19 @@ html
         else
             title MakersBnB
         script(href='http://code.jquery.com/jquery-3.3.1.js')
-        link(src='style.css')
+        style
+            include style.css
+            link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet')
     body
-        if title
-            h1= title
-        else
-            h1 MakersBnB
-        block content
+        a(class='nav_button' href='login')
+            button(type='button') login
+        a(class='nav_button' href='signup')
+            button(type='button') sign up
+        div(id='content')
+            if title
+                h1= title
+            else
+                h1 MakersBnB
+            block content
 
 
