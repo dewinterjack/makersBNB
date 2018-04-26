@@ -5,7 +5,6 @@ var bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 const spaceController = require('./controllers/spaceController.js');
 
-mongoose.set('debug', true);
 mongoose.connect('mongodb://localhost:27017/makersbnb_test');
 
 app.set('views', path.join(__dirname, 'views'));
